@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.android.upax_prueba_android.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_pokemonDetailFragment"
+            app:destination="@id/pokemonDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pokemonDetailFragment"
+        android:name="com.android.upax_prueba_android.ui.detail.PokemonDetailFragment"
+        tools:layout="@layout/fragment_pokemon_detail">
+        <argument
+            android:name="idPokemon"
+            app:argType="integer" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="height"
+            app:argType="integer" />
+        <argument
+            android:name="weight"
+            app:argType="integer" />
+        <argument
+            android:name="is_default"
+            app:argType="boolean" />
+        <argument
+            android:name="url"
+            app:argType="string" />
+        <argument
+            android:name="is_favorite"
+            app:argType="boolean" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.android.upax_prueba_android.ui.profile.ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+    </fragment>
+
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.android.upax_prueba_android.ui.location.LocationFragment"
+        tools:layout="@layout/fragment_location">
+    </fragment>
+</navigation>

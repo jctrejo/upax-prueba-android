@@ -1,9 +1,69 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.Upaxpruebaandroid" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/blue</item>
     </style>
 
     <style name="Theme.Upaxpruebaandroid" parent="Base.Theme.Upaxpruebaandroid" />
+
+    <style name="body10Text">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/size_font_10</item>
+    </style>
+
+    <style name="semiBold16Text">
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/size_font_18</item>
+    </style>
+
+    <style name="bodyMedium14Text">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/size_font_14</item>
+    </style>
+
+    <style name="body14Text">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/size_font_14</item>
+    </style>
+
+    <style name="boldExtraBold40Text">
+        <item name="android:fontFamily">@font/montserrat_extrabold</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">@dimen/size_font_40</item>
+    </style>
+
+    <style name="OutlinedRoundedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="shapeAppearanceOverlay">
+            @style/ShapeAppearanceOverlay.MyApp.TextInputLayout.Rounded
+        </item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MyApp.TextInputLayout.Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+        <item name="boxStrokeColor">@color/black</item>
+        <item name="hintTextColor">@color/black</item>
+    </style>
+
+    <style name="loaderDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="social_dialog_theme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@color/black_transparent</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
 </resources>

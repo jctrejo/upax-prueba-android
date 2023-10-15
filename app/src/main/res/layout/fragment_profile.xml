@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="@dimen/width_0"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_padding_20"
+                android:layout_marginTop="@dimen/margin_padding_5"
+                android:layout_marginEnd="@dimen/margin_padding_20"
+                android:textAlignment="center"
+                android:textAppearance="@style/semiBold16Text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="@dimen/width_200"
+                android:layout_height="@dimen/height_200"
+                android:layout_marginTop="@dimen/margin_padding_20"
+                app:cardCornerRadius="@dimen/corner_radius_100"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/profileImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_avatar"
+                    android:visibility="visible" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/placeholderTextLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/profilePlaceholderImageView"
+                        android:layout_width="@dimen/width_0"
+                        android:layout_height="@dimen/height_0"
+                        android:src="@drawable/bg_profile_green"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/placeholderTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_extrabold"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/boldExtraBold40Text"
+                        android:textSize="@dimen/size_font_40"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_padding_20"
+                android:layout_marginTop="@dimen/margin_padding_10"
+                android:layout_marginEnd="@dimen/margin_padding_20"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/corner_radius_10"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameTextView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_padding_10"
+                        android:layout_marginTop="@dimen/margin_padding_10"
+                        android:layout_marginEnd="@dimen/margin_padding_10"
+                        android:text="@string/data_to_modify_image"
+                        android:textAppearance="@style/bodyMedium14Text"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/nameTextInputLayout"
+                        style="@style/OutlinedRoundedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_padding_10"
+                        android:layout_marginTop="@dimen/margin_padding_20"
+                        android:layout_marginEnd="@dimen/margin_padding_10"
+                        android:layout_weight="1"
+                        android:hint="@string/add_name"
+                        android:textColorHint="@color/black"
+                        app:boxStrokeColor="@color/black"
+                        app:endIconMode="clear_text"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/nameEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:maxLength="50" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/urlTextInputLayout"
+                        style="@style/OutlinedRoundedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_padding_10"
+                        android:layout_marginTop="@dimen/margin_padding_10"
+                        android:layout_marginEnd="@dimen/margin_padding_10"
+                        android:layout_weight="1"
+                        android:hint="@string/add_url"
+                        android:textColorHint="@color/black"
+                        app:boxStrokeColor="@color/black"
+                        app:endIconMode="clear_text"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/nameTextInputLayout">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/urlEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:text="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/sentButton"
+                        android:layout_width="@dimen/width_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_padding_10"
+                        android:layout_marginTop="@dimen/margin_padding_150"
+                        android:layout_marginEnd="@dimen/margin_padding_10"
+                        android:layout_marginBottom="@dimen/margin_padding_30"
+                        android:backgroundTint="@color/blue"
+                        android:text="@string/sent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/urlTextInputLayout"
+                        app:layout_constraintStart_toStartOf="@+id/urlTextInputLayout"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="@dimen/width_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_20"
+                        android:text="@string/change_color_text"
+                        android:textAppearance="@style/bodyMedium14Text"
+                        app:layout_constraintEnd_toEndOf="@+id/urlTextInputLayout"
+                        app:layout_constraintStart_toStartOf="@+id/urlTextInputLayout"
+                        app:layout_constraintTop_toBottomOf="@+id/urlTextInputLayout" />
+
+                    <LinearLayout
+                        android:id="@+id/placeholderContainer"
+                        android:layout_width="@dimen/width_0"
+                        android:layout_height="@dimen/corner_radius_100"
+                        android:layout_marginStart="@dimen/margin_padding_10"
+                        android:layout_marginEnd="@dimen/margin_padding_10"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                        <ImageView
+                            android:id="@+id/insectImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_avatar_insect" />
+
+                        <ImageView
+                            android:id="@+id/jokerImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_avatar_joker" />
+
+                        <ImageView
+                            android:id="@+id/monsterImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_avatar_monster" />
+
+                        <ImageView
+                            android:id="@+id/japaneseImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_avatar_japanese" />
+
+                        <ImageView
+                            android:id="@+id/batmanImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_avatar_batman" />
+
+                        <ImageView
+                            android:id="@+id/menImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_avatar" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/colorContainer"
+                        android:layout_width="@dimen/width_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_10"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="@+id/urlTextInputLayout"
+                        app:layout_constraintStart_toStartOf="@+id/urlTextInputLayout"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                        <Button
+                            android:id="@+id/blueButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:id="@+id/redButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/red" />
+
+                        <Button
+                            android:id="@+id/yellowButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/yellow" />
+
+                        <Button
+                            android:id="@+id/blackButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/black" />
+
+                        <Button
+                            android:id="@+id/whiteButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/white" />
+
+                        <Button
+                            android:id="@+id/greyButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/grey" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

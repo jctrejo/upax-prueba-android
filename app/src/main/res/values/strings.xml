@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">upax-prueba-android</string>
+    <string name="app_name">PokemonUpax</string>
+    <string name="title_detail">Pokemones</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="home">Inicio</string>
+    <string name="profile">Perfil</string>
+    <string name="add_name">Agrega un nombre</string>
+    <string name="add_url">Agrega una url</string>
+    <string name="data_to_modify_image">Datos para modificar la imagen</string>
+    <string name="sent">Enviar</string>
+    <string name="add_a_correct_name">Agrega un nombre correcto</string>
+    <string name="add_a_correct_url">Agrega una url correcta</string>
+    <string name="change_color_text">Cambia el color del fondo o el placeholder</string>
+    <string name="basic_pokemon">Basic Pokémon</string>
+    <string name="weight">Peso</string>
+    <string name="height">Altura</string>
+    <string name="need_internet">Necesitas internet para cargar mas pokemones</string>
+    <string name="location">Localización</string>
 </resources>

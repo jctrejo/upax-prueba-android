@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/social_network_container_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/containerCardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_padding_20"
+                android:layout_marginTop="@dimen/margin_padding_20"
+                android:layout_marginEnd="@dimen/margin_padding_20"
+                android:layout_marginBottom="@dimen/margin_padding_20"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/yellow_secondary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_pokemon">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_padding_20"
+                        android:layout_marginTop="@dimen/margin_padding_20"
+                        android:layout_marginEnd="@dimen/margin_padding_20"
+                        android:layout_marginBottom="@dimen/margin_padding_20"
+                        android:visibility="visible"
+                        app:cardBackgroundColor="@color/clear_color"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:id="@+id/nameTextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/margin_padding_20"
+                                    android:layout_weight="1"
+                                    android:text="Pokemon"
+                                    android:textAlignment="center"
+                                    android:textAppearance="@style/semiBold16Text" />
+                            </LinearLayout>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_padding_5"
+                                android:layout_marginEnd="@dimen/margin_padding_5"
+                                app:cardBackgroundColor="@color/yellow"
+                                app:cardCornerRadius="@dimen/corner_radius_10"
+                                app:cardUseCompatPadding="true"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/placeholderTextLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:id="@+id/profilePlaceholderImageView"
+                                        android:layout_width="@dimen/width_0"
+                                        android:layout_height="@dimen/height_0"
+                                        android:src="@drawable/bg_rect_green"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/placeholderTextView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/montserrat_extrabold"
+                                        android:textAllCaps="true"
+                                        android:textAppearance="@style/boldExtraBold40Text"
+                                        android:textSize="@dimen/size_font_40"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <ImageView
+                                    android:id="@+id/postImageView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/height_200"
+                                    app:srcCompat="@drawable/ic_pokemon_logo" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/constraintLayout2"
+                                android:layout_width="@dimen/width_0"
+                                android:layout_height="@dimen/height_1"
+                                android:layout_marginTop="@dimen/margin_padding_10"
+                                android:background="@color/grey"
+                                app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+                                app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+                                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout3"
+                                android:layout_width="@dimen/width_0"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_padding_20"
+                                android:layout_marginTop="@dimen/margin_padding_20"
+                                android:layout_marginEnd="@dimen/margin_padding_20"
+                                android:orientation="horizontal"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/weight"
+                                    android:textAppearance="@style/semiBold16Text" />
+
+                                <TextView
+                                    android:id="@+id/weightTextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="TextView"
+                                    android:textAlignment="textEnd"
+                                    android:textAppearance="@style/semiBold16Text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout2"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/height_0"
+                                android:layout_marginStart="@dimen/margin_padding_20"
+                                android:layout_marginTop="@dimen/margin_padding_30"
+                                android:layout_marginEnd="@dimen/margin_padding_20"
+                                android:orientation="horizontal"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+                                <TextView
+                                    android:id="@+id/textView8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/height"
+                                    android:textAppearance="@style/semiBold16Text" />
+
+                                <TextView
+                                    android:id="@+id/heightTextView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="TextView"
+                                    android:textAlignment="textEnd"
+                                    android:textAppearance="@style/semiBold16Text" />
+                            </LinearLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/constraintLayout4"
+                                android:layout_width="@dimen/width_0"
+                                android:layout_height="@dimen/height_1"
+                                android:layout_marginStart="@dimen/margin_padding_20"
+                                android:layout_marginTop="@dimen/margin_padding_20"
+                                android:layout_marginEnd="@dimen/margin_padding_20"
+                                android:background="@color/grey"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <Button
+                                android:id="@+id/nextButton"
+                                android:layout_width="@dimen/width_0"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_padding_20"
+                                android:layout_marginTop="@dimen/height_40"
+                                android:layout_marginEnd="@dimen/margin_padding_20"
+                                android:layout_marginBottom="@dimen/margin_padding_10"
+                                android:backgroundTint="@color/blue"
+                                android:text="OK"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
