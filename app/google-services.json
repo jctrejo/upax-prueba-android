@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "816140412049",
+    "project_id": "prueba-pokemon-3bcb7",
+    "storage_bucket": "prueba-pokemon-3bcb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816140412049:android:ffce27bfcc011e115a8b30",
+        "android_client_info": {
+          "package_name": "com.android.upax_prueba_android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADENDOR0p78-Rbbsv180KEuq0a0AZN1pI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

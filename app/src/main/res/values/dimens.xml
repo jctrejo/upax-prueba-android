@@ -12,6 +12,7 @@
     //Height
     <dimen name="height_0">0dp</dimen>
     <dimen name="height_1">1dp</dimen>
+    <dimen name="height_2">2dp</dimen>
     <dimen name="height_30">30dp</dimen>
     <dimen name="height_40">40dp</dimen>
     <dimen name="height_50">50dp</dimen>

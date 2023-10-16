@@ -16,4 +16,8 @@
     <string name="height">Altura</string>
     <string name="need_internet">Necesitas internet para cargar mas pokemones</string>
     <string name="location">Localización</string>
+    <string name="save_location">Se guardo los datos en firestore, esto se pertira cada 2 min.</string>
+    <string name="coordinates">Coordenadas:</string>
+    <string name="pause_coordinates">Pausar el envio de cordenadas</string>
+    <string name="show_location">Ver localización</string>
 </resources>

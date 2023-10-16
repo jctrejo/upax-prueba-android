@@ -57,3 +57,11 @@ fun ImageView.colorImage(color: Int, context: Context) {
         android.graphics.PorterDuff.Mode.SRC_IN
     )
 }
+
+fun ImageView.glide(image: Int) {
+    context?.let {
+        Glide.with(it)
+            .load(image)
+            .into(this)
+    }
+}

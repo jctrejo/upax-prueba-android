@@ -19,7 +19,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#F4D745">
+            android:background="@drawable/bg_gradient_navegation">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -29,7 +29,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:srcCompat="@drawable/ic_pokemon_logo"
-                app:tint="@color/yellow_secondary" />
+                app:tint="@color/blue_secondary" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/placeholderTextLayout"
@@ -88,7 +88,7 @@
                 android:layout_marginTop="@dimen/margin_padding_20"
                 android:layout_marginEnd="@dimen/margin_padding_10"
                 android:textAppearance="@style/semiBold16Text"
-                android:textColor="@color/grey"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/post_image_view"
                 app:layout_constraintTop_toTopOf="parent" />
