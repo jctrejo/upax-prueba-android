@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "upax-prueba-android"
 include ':app'
+include ':modules:LocationSDK'

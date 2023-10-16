@@ -20,4 +20,6 @@
     <string name="coordinates">Coordenadas:</string>
     <string name="pause_coordinates">Pausar el envio de cordenadas</string>
     <string name="show_location">Ver localización</string>
+    <string name="go_map">Ir a modulo del mapa</string>
+
 </resources>

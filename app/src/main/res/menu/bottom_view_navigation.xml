@@ -9,8 +9,4 @@
         android:icon="@drawable/ic_pokemon_pika"
         android:title="@string/profile" />
 
-    <item
-        android:id="@+id/locationUserFragment"
-        android:icon="@drawable/ic_pin"
-        android:title="@string/location" />
 </menu>

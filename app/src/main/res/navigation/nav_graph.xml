@@ -49,26 +49,4 @@
         tools:layout="@layout/fragment_profile">
     </fragment>
 
-    <fragment
-        android:id="@+id/locationUserFragment"
-        android:name="com.android.upax_prueba_android.ui.location.MapFragment"
-        android:label="fragment_location_user"
-        tools:layout="@layout/fragment_location_user">
-        <action
-            android:id="@+id/action_locationUserFragment_to_locationMapsFragment"
-            app:destination="@id/locationMapsFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/locationMapsFragment"
-        android:name="com.android.upax_prueba_android.ui.location.LocationFragment"
-        android:label="fragment_location_maps"
-        tools:layout="@layout/fragment_location_maps">
-         <argument
-            android:name="latitude"
-            app:argType="float" />
-        <argument
-            android:name="longitude"
-            app:argType="float" />
-    </fragment>
 </navigation>

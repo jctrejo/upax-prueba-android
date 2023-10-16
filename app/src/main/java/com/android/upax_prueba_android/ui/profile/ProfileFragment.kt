@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.android.locationsdk.expose.NavigationExpose
 import com.android.upax_prueba_android.util.extension.colorImage
 import com.android.upax_prueba_android.util.extension.colorText
 import com.android.upax_prueba_android.util.extension.glidePlaceholder
@@ -47,6 +48,12 @@ class ProfileFragment : Fragment() {
         observer()
         sentButton.setOnClickListener {
             viewModel.getProfile(nameEditText.text.toString(), urlEditText.text.toString())
+        }
+
+        goToMapButton.setOnClickListener {
+            activity?.let {
+                NavigationExpose.openLocationModule(requireActivity())
+            }
         }
 
         insectImageView.setOnClickListener { changePlaceholder(R.drawable.ic_avatar_insect) }
