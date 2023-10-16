@@ -1,4 +1,4 @@
-package com.android.prueba_android_upax.domain.data.local.preferences
+package com.android.upax_prueba_android.data.source.local.preferences
 
 import android.content.Context
 import android.content.SharedPreferences
